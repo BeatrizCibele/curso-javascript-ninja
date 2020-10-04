@@ -34,8 +34,12 @@
       return this.age;
     }
     
-    this.addAge = function(qtdAnos){
-      return new Object(this.age + qtdAnos)
+    //O this retorna o próprio objeto
+    //Assim podemos usar a função getAge ao final de addAge
+    //addAge(1).getAge()
+    this.addAge = function(){
+      this.age += arguments[0];
+      return this;
     }
   }
 
@@ -77,7 +81,7 @@
   - "[NOME COMPLETO] agora tem [NOVA IDADE] anos."
   */
   console.log( '\nNova idade das pessoas:' );
-  console.log(`${Beatriz.getFullName()} agora tem ${Beatriz.addAge(1)} anos`)
-  console.log(`${Lena.getFullName()} agora tem ${Lena.addAge(-25)} anos`);
-  console.log(`${Lana.getFullName()} agora tem ${Lana.addAge(-4)} anos`);
+  console.log(`${Beatriz.getFullName()} agora tem ${Beatriz.addAge(1).getAge()} anos`)
+  console.log(`${Lena.getFullName()} agora tem ${Lena.addAge(-25).getAge()} anos`);
+  console.log(`${Lana.getFullName()} agora tem ${Lana.addAge(-4).getAge()} anos`);
 })()

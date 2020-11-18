@@ -80,15 +80,15 @@
     qualquer classe que for testada. Os dados passados no exercício são somente
     para exemplificar.
     */
-    var markup = '<main>\n  <div class="container">\n    <span class="text date"></span>\n    <p class=\'excerpt\'></p>\n  </div>\n</main>';
+    var markup = '<main>\n  <div class="container">\n <div class= "pururu"></div>   <span class="text date"></span>\n    <p class=\'excerpt\'></p>\n  </div>\n</main>';
     console.log( '\nQuais classes CSS existem na marcação abaixo?\n\n', markup, '\n' );
     
     function hasClass(markup, cssClass){        
         var regex = RegExp(cssClass);
-        var newMarkup = markup.match(/class=["'].+["']/gm);
+        var newMarkup = markup.match(/class=(\s)?["'].+["']/gm);
         return regex.test(newMarkup) + ' para classe ' + cssClass;         
     }   
-    var arrClass = ["container", "text", "date", "excerpt", "main"]
+    var arrClass = ["container", "text", "date", "excerpt", "main", "pururu"]
     arrClass.forEach(function(cssClass){
         console.log(hasClass(markup, cssClass));
     });    

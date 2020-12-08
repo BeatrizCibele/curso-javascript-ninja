@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6190e8, #a7bfe8);
+}
+
+h1{
+    font-family: 'Goldman', cursive;
+    margin-left: 580px;
+    margin-top: 150px;
+}
+
+.cronometro{
+    height: 340px;
+    width: 280px;
+    background: red;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 300px;
+    position: relative;
+}
+
+input{
+    height: 60px;
+    width: 177px;
+    position: relative;
+    top: 80px;
+    left: 47px;
+    font-size: 50px;
+    text-align: right;    
+}
+
+.buttons{
+    position: absolute;
+    top: 180px;
+    left: 47px;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+}

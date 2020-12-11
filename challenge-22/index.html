@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 22</title>
+</head>
+<body>
+    <script>
+//         (function(){
+//         'use strict'
+//         //call e apply - métodos de métodos
+//         function myFunction(a, b, c){
+//             var aa = a * 2;
+//             var bb = b * 3;
+//             var cc = c * 4;
+//             console.log(this.lastName, aa, bb, cc);
+//         }
+
+
+//         var obj = {
+//         lastName: "Dias"
+//         }
+//         var arr = [1, 2, 3]
+//         myFunction.call(obj, 'a', 'b', 'c');
+//         myFunction.apply(obj, arr)
+
+//         //prototype
+//         function myFunctionName(name, lastName){
+//             this.name = name;
+//             this.lastName = lastName;
+//         }
+
+//         myFunctionName.prototype.fullName = function(){
+//             return this.name + ' ' + this.lastName;
+//         }
+
+//         var name = new myFunctionName("Beatriz", "Dias")
+//         console.log(name.fullName());
+
+//         //arguments é um array like, não tem funções de array como forEach, map
+
+//         function functionArg(){
+//             Array.prototype.forEach.call(arguments,function(item, index){
+//                 console.log(item);
+//             })
+//         }
+
+//         function functionReduc(){
+//             var result = Array.prototype.reduce.call(arguments, function(acumulador, atual, index ){
+//                 return atual;
+//             })
+//             console.log('result',result)
+//         }
+
+//         functionArg(1,2,3,4,5);
+//         functionReduc(1,2,3,4,5);
+//         //flatMap Cod3r
+//         //extrair a nota dos alunos que estão dentro do objeto
+//         var escola = [{
+//       turma: "M1",
+//       alunos:[{
+//           nome: "Gustavo",
+//           nota: 8.1
+//       },{
+//           nome: "Ana",
+//           nota: 9.3
+//         }]
+//   },{
+//       turma: "M2",
+//       alunos: [{
+//           nome: "Rebeca",
+//           nota: 8.9
+//       },{
+//           nome: "André",
+//           nota: 5.7
+//       }]
+//   }]
+
+//  var getNotaAlunos = aluno => aluno.nota;
+//  var getTurmaAlunos = turma => turma.alunos.map(getNotaAlunos);
+
+//   Array.prototype.flatMap = function(callback){
+//     return Array.prototype.concat.apply([], this.map.callback);
+//   }
+
+//   var notas2 = escola.flatMap(getTurmaAlunos);
+//   console.log(notas2);
+
+//     })()
+        // console.time('Tempo da lista de compras');
+        // var compras = [
+        //     {item: "arroz", preco: 35},
+        //     {item: "feijao", preco: 30},
+        //     {item: "macarrao", preco: 5.50},
+        //     {item: "carne", preco: 40}
+        // ]
+        // console.timeEnd("Tempo da lista de compras");
+
+        // console.table(compras);
+
+    </script>
+</body>
+</html>

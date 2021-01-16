@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1{
+  margin-left: 560px;
+  margin-top: 150px;
+
+}
+
+.calculadora{
+  width: 250px;
+  height: 350px;
+  margin: auto;
+  margin-top: 40px;
+  background: #596875;
+  border-radius: 15px;
+  position: relative;
+}
+input{
+  width: 200px;
+  height: 40px;
+  appearance: textfield;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  text-align: right;
+  font-size: 25px;
+  border-color: none;
+}
+.area-buttons{
+  width: 210px;
+  height: 240px;
+  position: absolute;
+  top: 80px;
+  left: 19.5px;
+  right: 19.5px;
+  bottom: 10px;
+}
+
+.button-number{
+  float: left;
+  position: relative;
+  padding: 15px;
+  border-color: #596875;
+  border-style: outset;
+  background: #bdc3c7;
+  height: 20px;
+  width: 15px;
+}
+
+.button-operator, .button-ce, .button-equal{
+  float: left;
+  position: relative;
+  padding: 15px;
+  border-color: #596875;
+  border-style: outset;
+  background: #bdc3c7;
+  height: 20px;
+  width: 15px;
+}
